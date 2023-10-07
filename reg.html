@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>JobBuddy</title>
+    <link rel="stylesheet" href="registration.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Young Serif:400,700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">JobBuddy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Candidate register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recuriter register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <div class="container">
+            <form action="registration.php" method="post">
+            <center>
+                <h1>Registration Form</h1>
+            </center>
+            <div class="form-group">
+                <label for="firstname">Firstname:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Firstname" maxlength="32" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Lastname" maxlength="32" required>
+            </div>
+            <div class="form-group">
+                <label>Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" value="Male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="Female" name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" value="Other" name="gender" required>
+                <label for="other">Other</label>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <div class="phone-input">
+
+                  <input type="tel" id="phone" name="phone" placeholder="Phone no." maxlength="10" required>
+              </div>
+          </div>
+            <div class="form-group">
+                <label for="education">Education background</label>
+                <textarea id="education" name="education" cols="80" rows="2" placeholder="Education background"
+                    required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea id="skills" name="skills" cols="80" rows="5" placeholder="Skills"
+                    required></textarea>
+            </div> 
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Enter Password" required>
+              <span id="password-error" class="error-message"></span>
+            </div>
+          
+            <div class="form-group">
+                <label for="passwordRepeat">Re-type Password:</label>
+                <input type="password" id="passwordRepeat" name="passwordRepeat" placeholder="Retype Password" minlength="8" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="registerbtn" name="register">Register</button>
+                <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+            </div>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
